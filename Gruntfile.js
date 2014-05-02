@@ -25,6 +25,16 @@ module.exports = function(grunt) {
       dist: 'dist'
     },
 
+    react: {
+      files: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/components/src',
+        src: ['**/*.jsx'],
+        dest: '<%= yeoman.app %>/components',
+        ext: '.js'
+      }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       js: {
@@ -54,6 +64,10 @@ module.exports = function(grunt) {
           '.tmp/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
+      },
+      jsx: {
+        files: ['<%= yeoman.app %>/components/src/{,*/}*.jsx'],
+        tasks: ['react']
       }
     },
 
