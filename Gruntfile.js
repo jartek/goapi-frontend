@@ -29,9 +29,9 @@ module.exports = function(grunt) {
     react: {
       files: {
         expand: true,
-        cwd: '<%= yeoman.app %>/components/src',
+        cwd: '<%= yeoman.app %>/components',
         src: ['**/*.jsx'],
-        dest: '<%= yeoman.app %>/components',
+        dest: '<%= yeoman.app %>/scripts/components',
         ext: '.js'
       }
     },
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
       },
       // Compile all jsx files in components/src
       jsx: {
-        files: ['<%= yeoman.app %>/components/src/{,*/}*.jsx'],
+        files: ['<%= yeoman.app %>/components/{,*/}*.jsx'],
         tasks: ['react']
       }
     },
@@ -456,6 +456,7 @@ module.exports = function(grunt) {
     'rev',
     'usemin',
     'requirejs:dist',
+    'react',
     'htmlmin'
   ]);
 

@@ -9,7 +9,9 @@ require.config({
     underscore: '../bower_components/underscore/underscore',
     'angular-ui-utils': '../bower_components/angular-ui-utils/ui-utils',
     'angular-ui-router': '../bower_components/angular-ui-router/release/angular-ui-router',
-    'angular-sanitize': '../bower_components/angular-sanitize/angular-sanitize'
+    'angular-sanitize': '../bower_components/angular-sanitize/angular-sanitize',
+    ngReact: '../bower_components/ngReact/ngReact',
+    react: '../bower_components/react/react'
   },
   shim: {
     angular: {
