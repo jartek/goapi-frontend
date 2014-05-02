@@ -13,11 +13,15 @@ requirejs.config({
   baseUrl: '/base/app/scripts',
 
   paths: {
-    'sass-bootstrap': '../bower_components/sass-bootstrap/dist/js/bootstrap',
     jquery: '../bower_components/jquery/dist/jquery',
     'angular-scenario': '../bower_components/angular-scenario/angular-scenario',
     'angular-mocks': '../bower_components/angular-mocks/angular-mocks',
-    angular: '../bower_components/angular/angular'
+    angular: '../bower_components/angular/angular',
+    'sass-bootstrap': '../bower_components/sass-bootstrap/dist/js/bootstrap',
+    underscore: '../bower_components/underscore/underscore',
+    'angular-ui-utils': '../bower_components/angular-ui-utils/ui-utils',
+    'angular-ui-router': '../bower_components/angular-ui-router/release/angular-ui-router',
+    'angular-sanitize': '../bower_components/angular-sanitize/angular-sanitize'
   },
 
   shim: {

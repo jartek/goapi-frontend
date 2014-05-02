@@ -1,7 +1,4 @@
-/*jshint unused: vars */
-define(['angular', 'controllers/main']/*deps*/, function (angular, MainCtrl)/*invoke*/ {
+define(['angular'], function(angular) {
   'use strict';
-
-  return angular.module('frontendApp', ['frontendApp.controllers.MainCtrl',
-/*angJSDeps*/]);
+  return angular.module('frontendApp', []);
 });
