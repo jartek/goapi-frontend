@@ -25,6 +25,7 @@ module.exports = function(grunt) {
       dist: 'dist'
     },
 
+    // Grunt-React configuration Settings
     react: {
       files: {
         expand: true,
@@ -65,6 +66,7 @@ module.exports = function(grunt) {
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       },
+      // Compile all jsx files in components/src
       jsx: {
         files: ['<%= yeoman.app %>/components/src/{,*/}*.jsx'],
         tasks: ['react']
