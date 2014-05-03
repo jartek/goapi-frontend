@@ -14,7 +14,7 @@ define(['react'], function(React){
                 React.DOM.span( {className:"icon-bar"}),
                 React.DOM.span( {className:"icon-bar"})
               ),
-              React.DOM.a( {href:"#", className:"navbar-brand"}, "Your Company")
+              React.DOM.a( {href:"#", className:"navbar-brand"}, "Logo")
             ),
             React.DOM.div( {className:"collapse navbar-collapse"}, 
               React.DOM.ul( {className:"nav navbar-nav"}, 

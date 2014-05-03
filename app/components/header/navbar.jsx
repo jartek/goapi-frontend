@@ -14,7 +14,7 @@ define(['react'], function(React){
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a href="#" className="navbar-brand">Your Company</a>
+              <a href="#" className="navbar-brand">Logo</a>
             </div>
             <div className="collapse navbar-collapse">
               <ul className="nav navbar-nav">
