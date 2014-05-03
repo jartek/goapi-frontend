@@ -1,4 +1,4 @@
-define(['angular', 'components/button'], function(angular, React) {
+define(['angular', 'components/site'], function(angular) {
   'use strict';
   return angular.module('frontendApp', []);
 });

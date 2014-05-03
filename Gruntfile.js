@@ -25,6 +25,15 @@ module.exports = function(grunt) {
       dist: 'dist'
     },
 
+    prettysass: {
+      options: {
+        alphabetize: true
+      },
+      app: {
+        src: ['<%= yeoman.app %>/styles/**/*.scss']
+      },
+    },
+
     // Grunt-React configuration Settings
     react: {
       files: {
@@ -51,7 +60,7 @@ module.exports = function(grunt) {
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+        tasks: ['compass:server', 'autoprefixer', 'prettysass']
       },
       gruntfile: {
         files: ['Gruntfile.js']
