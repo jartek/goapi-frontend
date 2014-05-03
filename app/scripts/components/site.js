@@ -1,13 +1,11 @@
 /**
  * @jsx React.DOM
  */
-define(['react'], function(React){
+define(['react', 'components/header/navbar'], function(React, Navbar){
   var Site = React.createClass({displayName: 'Site',
     render: function() {
       return (
-        React.DOM.div(null, 
-        "Say Wut !?"
-        )
+        Navbar(null )
       );
     }
   });

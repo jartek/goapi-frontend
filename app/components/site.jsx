@@ -1,13 +1,11 @@
 /**
  * @jsx React.DOM
  */
-define(['react'], function(React){
+define(['react', 'components/header/navbar'], function(React, Navbar){
   var Site = React.createClass({
     render: function() {
       return (
-        <div>
-        Say Wut !?
-        </div>
+        <Navbar />
       );
     }
   });
